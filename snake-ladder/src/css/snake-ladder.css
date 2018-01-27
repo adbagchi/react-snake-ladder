@@ -1,0 +1,245 @@
+.clr {
+    clear: both;
+}
+
+.board {
+    width: 720px;
+    display: inline-block;
+    position: relative;
+    border: 10px solid #e2e25b;
+    border-radius: 6px;
+    margin-right: 20px;
+    margin-bottom: 100px
+}
+
+
+
+
+.board .board-row .board-cell {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    padding: 6px;
+    border: 1px solid #989898;
+    color: #3b3b3b;
+    margin: -1px;
+}
+
+
+.board .board-row .board-cell.player div{
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    margin-left: 5px;
+}
+
+.board .board-row .board-cell.player .player-1 {
+    background: #ff0000;
+}
+
+
+.board .board-row .board-cell.player .player-2 {
+    background: #008000;
+}
+
+
+.board .board-row .board-cell.player .player-3 {
+    background: #ff0;
+}
+
+
+.board .board-row .board-cell.player .player-4 {
+    background: #0000ff;
+}
+
+.board .board-row .board-cell.snake {
+    background: #de4242;
+}
+
+
+.board .board-row .board-cell.ladder {
+    background: #60c760;
+}
+
+
+.board .board-row .board-cell.ladder div,.board .board-row .board-cell.snake div {
+    font-size: 12px;
+}
+
+.player {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.player .player-turn {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+
+.player .turn-dice {
+    text-align: center;
+    width: 160px;
+    display: inline-block;
+}
+
+.player .turn-dice img {
+    height: 80px;
+}
+
+
+
+
+
+
+
+
+.player .turn-dice button {
+    border: 1px solid #2eef69;
+    padding: 10px 12px;
+    margin: 10px 0 0;
+    width: 100%;
+    font-size: 20px;
+    background: #2eef69;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.dice-roll:disabled {
+    background: #ddd;
+    border: 1px solid #ddd;
+}
+
+
+.player-position {
+    display: inline-block;
+    margin-top: 10px;
+    background: #f8f0f0;
+    width: 150px;
+}
+
+
+.player-position h3 {
+    background: #7d4848;
+    color: #f2ecec;
+}
+
+.player-score ul {
+    list-style: none;
+}
+
+
+.player-score ul li {
+    margin-left: -40px;
+}
+
+.player-score ul li.winner {
+    background-color: #5ec660;
+    color: #fff;
+}
+
+.player-score ul li .name {
+    float: left;
+    padding-left: 20px;
+}
+
+
+.player-score ul li .score {
+     float: right;
+    padding-right: 20px;
+}
+
+
+.popup {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.popup .popup-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 430px; 
+}
+
+
+.popup .popup-content.result {
+    background: #f8f0f0;
+}
+
+.popup .popup-content.result h3 {
+    background: #7d4848;
+    color: #f2ecec;
+}
+
+
+.popup .popup-content.result label {
+    margin-left: 40%;
+    font-weight: 600;
+}
+
+
+.popup .popup-content.result ul li.incomplete {
+   background-color: #d34444;
+    color: #fff;
+}
+
+  
+
+
+.popup .popup-content form .player-selection {
+    margin: 5px;
+    padding: 3px;
+} 
+
+
+.popup .popup-content form .player-selection label select {
+    margin-left: 26px;
+    width: 200px;
+} 
+
+
+
+.popup .popup-content form .players .player-name {
+    margin: 5px;
+    padding: 3px;
+} 
+
+
+
+.popup .popup-content form .players .player-name label input {
+    margin-left: 10px;
+    width: 200px;
+}
+
+
+.popup .popup-content form .action {
+    margin: 20px auto 5px auto;
+}
+
+
+
+ .popup .popup-content form .action input {
+    left: 40%;
+    position: relative;
+    cursor: pointer;
+ }
+
+
+
+
+
